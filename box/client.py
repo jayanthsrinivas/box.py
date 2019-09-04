@@ -3,8 +3,8 @@ A client library for working with Box's v2 API.
 For extended specs, see: http://developers.box.com/docs/
 """
 from datetime import datetime
-
-from httplib import NOT_FOUND, PRECONDITION_FAILED, CONFLICT, UNAUTHORIZED
+import http.client
+from http.client import NOT_FOUND, PRECONDITION_FAILED, CONFLICT, UNAUTHORIZED
 import json
 import time
 from urllib import urlencode
